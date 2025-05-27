@@ -147,17 +147,18 @@ In this project, we explore network traffic between two Azure Virtual Machines u
 <br />
 
 <p>
-<img width="850" alt="NSG20" src="https://github.com/user-attachments/assets/1bed5ab6-c924-4c19-9698-49f9858fcce1" />
+<img width="1583" alt="Screenshot 2025-05-27 at 1 50 04 AM" src="https://github.com/user-attachments/assets/0cf8cc2d-3a44-48d6-add3-53fb4587b405" />
 
-<img width="850" alt="NSG21" src="https://github.com/user-attachments/assets/ec3874c0-d5e6-4071-a367-9b7c5cfc5391" />
+ <img width="1567" alt="Screenshot 2025-05-27 at 1 55 15 AM" src="https://github.com/user-attachments/assets/9c6ea52c-f098-4433-85a2-12e8af4cff04" />
+
 </p>
 
 <p>
-- Figure 13. With Wireshark and PowerShell open, enter the command ping 10.0.0.5 in PowerShell to ping the linux-vm. Since we have the icmp filter active in Wireshark, we are only seeing icmp traffic over the network. This filter allows us to see our windows-vm (10.0.0.4) send the request to the linux-vm (10.0.0.5) and the linux-vm send a reply back to the winows-vm. Wireshark and PowerShell both show that we just successfully tested the connection between the two VMs!  
+- In PowerShell, enter the command ping 10.0.0.5 to ping the linux-vm. Since the icmp filter is active in Wireshark, we will only seeing icmp traffic over the network. This lets us see our windows virtual machine (10.0.0.4) send the request to the linux virtual machine (10.0.0.5) and the linux virtual machine send a reply back to the winows-vm. We have just successfully tested the connection between the two virtual machines.  
 </p>
 
 <p>
-- Now in PowerShell, initiate a perpetual ping to the linux-vm with the command ping 10.0.0.5 -t. This command tells the windows-vm to ping the linux-vm non-stop. See Figure 14. Look at all that traffic! 🚗🚙🚗🚙🚗🚙🚗🚙🚗🚙🚗🚙🚗🚙🚗🚙🚗🚙🚗🚙🚗🚙🚗🚙
+- Next, in PowerShell, initiate a perpetual ping to the linux-vm by entering the command ping 10.0.0.5 -t. This tells the windows virtual machine to ping the linux virtual machine non-stop. Observe all of that traffic
 </p>
 <br />
 
