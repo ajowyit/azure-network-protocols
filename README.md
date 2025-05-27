@@ -219,9 +219,17 @@ In this project, we explore network traffic between two Azure Virtual Machines u
 
 <p>
 - Now let's observe SSH Traffic. In Wireshark, type ssh into the filter bar and start a new network traffic capture. 
+</p>
+<p>
 - In PowerShell, we will create a secure connection to the linux-vm using the command ssh username@PrivateIP.(username and Private IP of the linux-vm) Example = ssh ajowyit@10.0.0.5 and press enter. 
+</p>
+<p>
 - It will ask if are you sure. Type yes and press enter again. Then enter the password of the linux-vm. As you type in the password, it will remain blank. Type in the password and press enter.
+</p>
+<p>
 - We now have a secure and encrypted connection between the windows-vm and linux-vm, notice the encrypted packets in Wireshark!
+</p>
+<p>
 - Observe the outputs in PowerShell with the id, hostname, and uname -a commands.
 </p>
 
@@ -229,11 +237,12 @@ In this project, we explore network traffic between two Azure Virtual Machines u
 <br />
 
 <p>
-<img width="850" alt="SSH4" src="https://github.com/user-attachments/assets/c2ec353e-546e-4ee1-b89b-2f109f0d1d8f" />
+ <img width="1621" alt="Screenshot 2025-05-27 at 4 30 04 PM" src="https://github.com/user-attachments/assets/f731f6e6-1760-4572-96a9-0a4c7efb0b41" />
+
 </p>
 
 <p>
-- Now that we are done observing SSH traffic, simply type the command exit and press enter in PowerShell. "Connection to 10.0.0.5 closed" will appear. Next, we will look at some DHCP traffic. 
+- We are done observing SSH traffic. Type the command exit and press enter in PowerShell to close the ssh connection to the linux-vm. Next, let's observe DHCP traffic. 
 </p>
 <br />
 
