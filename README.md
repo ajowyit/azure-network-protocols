@@ -200,18 +200,15 @@ In this project, we explore network traffic between two Azure Virtual Machines u
 <br />
 
 <p>
-<img width="850" alt="NSG29" src="https://github.com/user-attachments/assets/1e12ca49-9387-4d15-83c8-c758bb5f8778" />
+<img width="1500" alt="Screenshot 2025-05-27 at 3 40 38 PM" src="https://github.com/user-attachments/assets/a8e85b7f-b238-4525-8483-96a6df877a8c" />
 
-<img width="850" alt="NSG30" src="https://github.com/user-attachments/assets/e4358c68-7c66-48cf-ade4-4a5c70f5ee92" />
+<img width="1587" alt="Screenshot 2025-05-27 at 3 42 45 PM" src="https://github.com/user-attachments/assets/c0d1d35c-9920-4032-ab15-b4895edae0ac" />
 </p>
 
 <p>
-- Now, we will visit Azure real quick and delete the security rule we created. Check the box next to our rule and click the trash can to the right. Click "Yes" to confirm. With the rule deleted, the ping from the windows-vm to the linux-vm should start back up. Lets run back to the windows-vm and check it out. 🏃‍♂️
+- Go back and delete the security rule we created. Click the trash can to the right of the rule. Click "Yes" to confirm. Pings should no longer time out, go back to the windows-vm and observe PowerShell and the network traffic in Wireshark. Notice how Wireshark shows requests and replies again and PowerShell is showing replies from 10.0.0.5 again!
 </p>
 
-<p>
-- In Figure 20, we can see via Wireshark and PowerShell that the ping started back up. Wireshark is showing the request and reply. PowerShell is showing Replies from 10.0.0.5 again. Let's Go! (To stop the perpetual ping, press Ctrl + C in PoweShell)😏
-</p>
 <br />
 
 <h3>Step 3: Observe SSH and DHCP Traffic</h3>
