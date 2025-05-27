@@ -85,7 +85,7 @@ In this project, we explore network traffic between two Azure Virtual Machines u
 </p>
 
 <p>
-- We are now connected to the windows-vm in Azure from our Home Lab using RDP! Now use windows-vm's browser, "Edge", and go to www.wireshark.org to dowload Wireshark to the VM. Wireshark is a network protocol analzyer that lets you see what's happening on your network at a miscroscopic level. We will use this tool to observe network traffic with various protocols.
+- Now we're connected to the windows-vm in Azure from our Home Lab using RDP! Open the virtual machine's browser, "Microsoft Edge". Go to www.wireshark.org to dowload Wireshark on the virtual machine using default settings. We will use this Wireshark to observe network traffic with various protocols.
 </p>
 <br />
 
