@@ -37,16 +37,18 @@ In this project, we explore network traffic between two Azure Virtual Machines u
 
 <h3>Step 1: Connect to virtual machine using RDP & Install Wireshark</h3>
 <p>
-<img width="850" alt="NSG2" src="https://github.com/user-attachments/assets/4feeae8a-e85d-4f16-8367-1aca1364efa6" />
- 
-<img width="850" alt="NSG3" src="https://github.com/user-attachments/assets/d458c1cd-87be-49e3-b9fd-f38c9cd51466" />
- </p>
+
+<img width="1500" alt="Screenshot 2025-05-26 at 11 16 53 PM" src="https://github.com/user-attachments/assets/6008b209-9a30-4b66-a941-7959a1e2d425" />
+
+<img width="1500" alt="Screenshot 2025-05-26 at 11 32 17 PM" src="https://github.com/user-attachments/assets/984cc7f0-1126-4ae8-899d-04ab8b0eba08" />
+
+</p>
 <p>
-- Start by logging into your Azure account and go to the Virtual Machines section. From here, we will need to start the VMs (turn them on). As shown in Figure 1, Select both VMs by checking the box and then click the "Start" button. Azure will ask, "Do you want to start all the selected VMs?" Click "Yes". *While we are here, note the Public IP for the windows-vm. We will need this later.*
+- Log into your Azure account. Navigate to Virtual Machines. Start the virtual machines if they are not already on/running. Select both virtual machines by checking the box and then click the "Start" button. Azure will ask, "Do you want to start all the selected VMs?" Click "Yes". Make sure to take note of the Public IP for the windows-vm.
 </p>
 
 <p>
-- After a couple minutes, the VMs should be up and running. Confirm this before moving on by checking the status as shown in Figure 2. You can minimize the Azure window for now. We will come back to it later. Move to your device for the next couple of steps. 
+- You'll need to wait a bit for the virtual machines to be up and running. Make sure that the virtual machines are be up and running before moving on by checking **Status**.
 </p>
 <br />
 
