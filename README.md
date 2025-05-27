@@ -71,8 +71,7 @@ In this project, we explore network traffic between two Azure Virtual Machines u
 <br />
 
 <p>
-<img width="700" height="500" alt="NSG7" src="https://github.com/user-attachments/assets/9a30c7fe-277d-4f94-855c-b8d62ab9d512" />
-
+ <img width="1000" alt="Screenshot 2025-05-26 at 11 50 12 PM" src="https://github.com/user-attachments/assets/9f591580-8189-404c-9645-655d5a06db45" />
 </p>
 
 <p>
@@ -80,9 +79,6 @@ In this project, we explore network traffic between two Azure Virtual Machines u
 </p>
 <br />
 
-<p>
-<img width="850" alt="NSG8" src="https://github.com/user-attachments/assets/fe98c9cc-4d8d-4ffb-b896-5beda395e160" />
-</p>
 
 <p>
 - Now we're connected to the windows-vm in Azure from our Home Lab using RDP! Open the virtual machine's browser, "Microsoft Edge". Go to www.wireshark.org to dowload Wireshark on the virtual machine using default settings. We will use this Wireshark to observe network traffic with various protocols.
@@ -90,8 +86,12 @@ In this project, we explore network traffic between two Azure Virtual Machines u
 <br />
 
 <p>
-<img width="850" alt="NSG12" src="https://github.com/user-attachments/assets/983c0656-581b-4fca-b7a0-1f62e3f5831d" />
+<img width="1700" alt="Screenshot 2025-05-27 at 12 17 24 AM" src="https://github.com/user-attachments/assets/1fad2c2d-e7af-4740-819c-6f3c349a1dc0" />
+
+<img width="1500" alt="Screenshot 2025-05-27 at 12 23 20 AM" src="https://github.com/user-attachments/assets/9280aa79-53d0-4711-a228-2febd0b08995" />
+
 </p>
+
 
 <p>
 - From Wireshark's website, select "Windows x64 Installer" to download. Then from downloads, Open file and run the Wireshark setup. Click "Next" and "Finish" a couple times to complete the setup.
