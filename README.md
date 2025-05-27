@@ -129,20 +129,20 @@ In this project, we explore network traffic between two Azure Virtual Machines u
 <br />
 
 <p>
-<img width="850" alt="NSG18" src="https://github.com/user-attachments/assets/44e86958-48be-4355-991a-f6051c54d1cf" />
+ <img width="1500" alt="Screenshot 2025-05-27 at 1 23 53 AM" src="https://github.com/user-attachments/assets/e6767870-7e44-4ea1-b80d-5409a4e13a38" />
 </p>
 
 <p>
-- In Azure, select the linux-vm and click Networking. Shown in Figure 11. The Private IP is 10.0.0.5. Minimize Azure and go back to the windows-vm.
+- In Azure, select the linux-vm and click Networking to find the Private IP address. It should be 10.0.0.5. Go back to the windows-vm.
 </p>
 <br />
 
 <p>
-<img width="600" alt="NSG19" src="https://github.com/user-attachments/assets/783c18ab-0313-4052-a72b-81131b06651b" />
+ <img width="796" alt="Screenshot 2025-05-27 at 1 29 27 AM" src="https://github.com/user-attachments/assets/c7c893a2-1392-4182-8953-fe82293379ba" />
 </p>
 
 <p>
-- On the windows-vm, click the Windows button at the bottom left of you screen. Search for PowerShell. Open PowerShell. We will use commands in PowerShell to ping the linux-vm from the windows-vm.
+- On the windows virtual machine, click the Windows button at the bottom left of you screen. Search for PowerShell and open it. We are going to use commands in PowerShell to ping the linux-vm from the windows-vm.
 </p>
 <br />
 
