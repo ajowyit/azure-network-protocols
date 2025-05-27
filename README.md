@@ -213,18 +213,19 @@ In this project, we explore network traffic between two Azure Virtual Machines u
 
 <h3>Step 3: Observe SSH and DHCP Traffic</h3>
 <p>
-<img width="850" alt="SSH1" src="https://github.com/user-attachments/assets/6ea801a4-b06c-42cb-aa06-234f673d8584" />
-
-<img width="850" alt="SSH3" src="https://github.com/user-attachments/assets/3f1ae60b-20b1-4408-8da3-baee50f63363" />
+ <img width="1624" alt="Screenshot 2025-05-27 at 4 05 38 PM" src="https://github.com/user-attachments/assets/5d197381-36e8-4e71-8b23-07bc10a97643" />
+<img width="1620" alt="Screenshot 2025-05-27 at 4 11 49 PM" src="https://github.com/user-attachments/assets/934bf7e1-d655-4378-bc82-b17431188561" />
 </p>
 
 <p>
-- Now we are going to observe some SSH Traffic. In Wireshark, type ssh into the filter bar and start a new capture. In PowerShell, we will create a secure connection to the linux-vm with the command ssh username@PrivateIP.(username and Private IP of the linux-vm) Example = ssh jheck1@10.0.0.5 and press enter. It will ask are you sure. Type yes and press enter again. Now, you will need to enter the password of the linux-vm. FYI... as you type in the password, it will remain blank. Type in the password and press enter. Refer to Figure 21.
+- Now let's observe SSH Traffic. In Wireshark, type ssh into the filter bar and start a new network traffic capture. 
+- In PowerShell, we will create a secure connection to the linux-vm using the command ssh username@PrivateIP.(username and Private IP of the linux-vm) Example = ssh ajowyit@10.0.0.5 and press enter. 
+- It will ask if are you sure. Type yes and press enter again. Then enter the password of the linux-vm. As you type in the password, it will remain blank. Type in the password and press enter.
+- We now have a secure and encrypted connection between the windows-vm and linux-vm, notice the encrypted packets in Wireshark!
+- Observe the outputs in PowerShell with the id, hostname, and uname -a commands.
 </p>
 
-<p>
-- As you can see in Figure 22, we now have a secure and encrypted connection between the windows-vm and linux-vm. Look at those encrypted packets in Wireshark! 🔐 🚔
-</p>
+
 <br />
 
 <p>
