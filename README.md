@@ -164,41 +164,38 @@ In this project, we explore network traffic between two Azure Virtual Machines u
 
 <h3>Step 2: Use NSG (Firewall) to Deny Ping</h3>
 <p>
-<img width="850" alt="NSG23" src="https://github.com/user-attachments/assets/488a7f94-86ca-40f3-8c8d-630fedcb2493" />
+<img width="1500" alt="Screenshot 2025-05-27 at 2 45 55 PM" src="https://github.com/user-attachments/assets/a5c3cab7-69b1-464a-8c29-8dbf995b9545" />
 </p>
 
 <p>
-- While the windows-vm and linux-vm have a super long conversation, we will pivot back to Azure, explore some Network Securiy Group functions, and set a new security rule for the linux-vm. In Vitural Machines, click the linux-vm, select Network settings, and then click "linux-vm-nsg" under Network security group.
-</p>
-<br />
-
-<p>
-<img width="850" alt="NSG25" src="https://github.com/user-attachments/assets/0d418eaa-dffa-4928-8b25-e364c7707981" />
-</p>
-
-<p>
-- Next, select Inbound security rules and then click the "+Add" button to create a new rule. We are going to tell the Firewall to Deny inbound traffic to the linux-vm. That's right. Stop that ping. Change Source to "Any". Put an asterisk in both port ranges (asterisk = all). Select "ICMPv4" for the Protocol. (Fun Fact... ping uses ICMPv4) Action will be "Deny". Change Priority to "290". The 290 will make our new rule first priority. Then, click the "Add" button.
+- Now we will explore Network Securiy Group functions and set a new security rule for the linux-vm. In Vitural Machines, click the linux-vm, select Network settings, and then click "linux-vm-nsg" under Network security group.
 </p>
 <br />
 
 <p>
-<img width="850" alt="NSG28" src="https://github.com/user-attachments/assets/4cc11709-adce-4a8e-be93-c97eb890a700" />
+<img width="1500" alt="Screenshot 2025-05-27 at 2 49 26 PM" src="https://github.com/user-attachments/assets/52473a99-38e2-4d1f-a27b-51b9154f631f" />
 </p>
 
 <p>
-- Look at that! Our new Security Rule has been created and at the top of the list. Now we will go back to the windows-vm and see what happens. 👀
+- Next, select Inbound security rules. Click the "+Add" button to create a new rule. We are going to tell the Firewall to Deny inbound traffic to the linux-vm from ping. Change Source to "Any". Make sure there's an asterisk in both port ranges (asterisk = all). Select "ICMPv4" for the Protocol since ping uses ICMPv4. For Action, select "Deny". Change the Priority to "290" which will make our new rule first priority. Finally, add the rule to the NSG by clicking the "Add" button.
 </p>
 <br />
 
 <p>
-<img width="850" alt="NSG26" src="https://github.com/user-attachments/assets/d7498c96-ec40-4300-b392-c1741c262f6f" />
-
-<img width="850" alt="NSG27" src="https://github.com/user-attachments/assets/b4d40127-3623-4afa-aa9a-ac07e69aa270" />
+<img width="1500" alt="Screenshot 2025-05-27 at 3 01 48 PM" src="https://github.com/user-attachments/assets/64155970-dd23-4287-a632-79f929bebf13" />
 </p>
 
 <p>
-- Figure 17 shows when the ping request starts to time out in PowerShell because of the new rule we created in the Network Security Group. 
-- We can see in Figure 18 exactly when the rule took effect and started to deny the ping request from the windows-vm in Wireshark. It even has a timestamp!
+- Now our new Security Rule has been created. Go back to the windows-vm.
+</p>
+<br />
+
+<p>
+ <img width="1498" alt="Screenshot 2025-05-27 at 3 28 58 PM" src="https://github.com/user-attachments/assets/c56c64e5-94c4-4c9d-abee-c1cd08e65432" />
+</p>
+
+<p>
+- Observe how the ping request(s) time out in PowerShell because of the new rule we created in the Network Security Group. 
 </p>
 <br />
 
