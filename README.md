@@ -121,6 +121,9 @@ In this project, we explore network traffic between two Azure Virtual Machines u
 
 <p>
 - At the Filter Bar at the top of the srceen, type "icmp" and press enter or click the arrow icon to apply the filter. 
+</p>
+
+<p>
 - We will use the icmp filter to isolate ICMP traffic.
 </p>
 <br />
