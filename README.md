@@ -94,33 +94,34 @@ In this project, we explore network traffic between two Azure Virtual Machines u
 
 
 <p>
-- From Wireshark's website, select "Windows x64 Installer" to download. Then from downloads, Open file and run the Wireshark setup. Click "Next" and "Finish" a couple times to complete the setup.
+- Once on Wireshark's website, select "Windows x64 Installer" to download the installer .exe file. Then go to your downloads, open the file and finish the Wireshark setup. Keep clicking "Next" and "Finish" until you complete the setup.
 </p>
 <br />
 
 <h3>Step 2: Observe ICMP Traffic</h3>
 <p>
-<img width="850" alt="NSG15" src="https://github.com/user-attachments/assets/4f381a6b-e609-486f-9fff-24519a352c79" />
+ <img width="748" alt="Screenshot 2025-05-27 at 12 51 32 AM" src="https://github.com/user-attachments/assets/0eb44072-f0cb-4b90-a0bd-2127481970a8" />
 </p>
 
 <p>
-- Once the installation is complete, open Wireshark. On the main screen, make sure "Ethernet" is highlighted and click on the shark fin in the top left of the screen to start our capture of network traffic.
+- Open Wireshark. 
+- Make sure "Ethernet" is highlighted
+- Click on the shark fin in the top left of the screen to start capturing network traffic.
 </p>
 <br />
 
 <p>
-<img width="850" alt="NSG16" src="https://github.com/user-attachments/assets/43fa5ef1-d616-4a74-8383-47a674ef866c" />
- 
-<img width="850" alt="NSG17" src="https://github.com/user-attachments/assets/abaad5d6-3ecc-4cb7-9448-2a51bac490f2" />
- </p>
-<p>
+<img width="751" alt="Screenshot 2025-05-27 at 1 20 11 AM" src="https://github.com/user-attachments/assets/ba9ce63a-1d85-4ff3-b888-0743e1c38fbb" />
+<img width="750" alt="Screenshot 2025-05-27 at 12 54 52 AM" src="https://github.com/user-attachments/assets/db9412a1-8ee4-4ca9-ac15-3b06298df572" />
+</p>
   
 <p>
-- As shown on Figure 9, we can see all the traffic running over the network in the purple shaded area (top box). Who knew all this was happening?
+- We can see all the traffic running over the network in the purple shaded area.
 </p>
 
 <p>
-- Now locate the Filter Bar at the top of the srceen, type in icmp and hit enter. Shown in figure 10. We will use the icmp filter to observe the network traffic as we ping the linux-vm we created in Azure. We need to locate the Private IP adrress of the linux-vm in order to ping it. So, back to Azure we go. Should be quick since we just minimized it earlier.
+- At the Filter Bar at the top of the srceen, type "icmp" and press enter or click the arrow icon to apply the filter. 
+- We will use the icmp filter to isolate ICMP traffic.
 </p>
 <br />
 
