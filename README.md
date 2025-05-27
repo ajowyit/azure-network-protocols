@@ -35,7 +35,7 @@ In this project, we explore network traffic between two Azure Virtual Machines u
 
 <h2>Actions and Observations</h2>
 
-<h3>Step 1: Connect to VM using RDP & Install Wireshark</h3>
+<h3>Step 1: Connect to virtual machine using RDP & Install Wireshark</h3>
 <p>
 <img width="850" alt="NSG2" src="https://github.com/user-attachments/assets/4feeae8a-e85d-4f16-8367-1aca1364efa6" />
  
