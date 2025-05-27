@@ -11,7 +11,6 @@ In this project, we explore network traffic between two Azure Virtual Machines u
 
 - [Creating Virtual Machines in Azure](https://github.com/ajowyit/creating-virtual-machines/)
 
----
 
 <h2>Environments and Technologies Used</h2>
 
