@@ -48,23 +48,25 @@ In this project, we explore network traffic between two Azure Virtual Machines u
 </p>
 
 <p>
-- You'll need to wait a bit for the virtual machines to be up and running. Make sure that the virtual machines are be up and running before moving on by checking **Status**.
+- You'll need to wait a bit for the virtual machines to be up and running. Make sure that the virtual machines are be up and running before moving on by checking Status.
 </p>
 <br />
 
 <p>
-<img width="850" alt="NSG5" src="https://github.com/user-attachments/assets/6a0c5af2-d3ef-47d1-a9d6-78e57981ce22" />
+ <img width="1017" alt="Screenshot 2025-05-26 at 11 37 43 PM" src="https://github.com/user-attachments/assets/2781674d-ef24-4871-89e2-17071e05cdff" />
+
 </p>
 
 <p>
-- From your device, you will need to open Remote Desktop (Windows) or the Windows App (MacOS). For this walkthrough, I used the Windows App because I am running MacOS. The Windows App can be found in the App Store and only takes seconds to download. As in Figure 3, once you open the Windows App, click the "+" dropdown button at the top right of your screen. Then, select "Add PC".
+- Open Remote Desktop (Windows) or the Windows App (MacOS). For this walkthrough, I'm using the Windows App because I have a Mac. The Windows App can be found in the App Store and downloaded from there. Once you open the Windows App, click the "+" button at the top right. Then, select "Add PC" from the dropdown options.
 </p>
 <br />
 <p>
-<img width="400" height="500" alt="NSG6" src="https://github.com/user-attachments/assets/535c8a2c-3b8a-4c20-9aca-a1615ac5c0ad" />
+ <img width="521" alt="Screenshot 2025-05-26 at 11 40 06 PM" src="https://github.com/user-attachments/assets/33bb040e-a18c-4d64-b3f2-bf033b6f067d" />
+
  </p>
 <p>
-- Enter the Public IP address for the windows-vm in "PC name". Good thing we noted the Public IP from Azure earlier. 😉 If you forgot to note it, simply go back to Azure and locate the Public IP on the main Virtual Machines page. (Refer to Figure 1.) Now for the Friendly name, I used "windows-vm" to keep it simple. Also, make sure "Reconnect if the connection is dropped" is selected. Click "Add".   
+- Enter the Public IP address for the windows virtual machine that we took note of earlier in "PC name".  If you forgot to take note of it, go back to Azure and locate it on the main Virtual Machines page. For Friendly name, I used "windows-vm" for clarity and simplicity. Click "Add".   
 </p>
 <br />
 
