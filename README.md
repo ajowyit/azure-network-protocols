@@ -247,9 +247,10 @@ In this project, we explore network traffic between two Azure Virtual Machines u
 <br />
 
 <p>
-<img width="850" alt="DHCP1" src="https://github.com/user-attachments/assets/93a7227e-1e04-405f-b917-50a6e20c8efa" />
+ <img width="754" alt="Screenshot 2025-05-27 at 5 43 16 PM" src="https://github.com/user-attachments/assets/ed8c56b1-1b2f-4de2-b7c0-689b2e39f765" />
 
-<img width="850" alt="DHCP2" src="https://github.com/user-attachments/assets/f29464d7-627b-4950-a884-708625174fe0" />
+ <img width="1266" alt="Screenshot 2025-05-27 at 5 42 15 PM" src="https://github.com/user-attachments/assets/3682a835-9689-478e-b8d9-b6618329d019" />
+
 </p>
 
 <p>
@@ -269,22 +270,17 @@ ipconfig /release
 ipconfig /renew
 ```
 
-<p>
-- So, Figure 25. What is this all about? Well, we can't use the command ipconfig /release in PowerShell because we will loose our connection to the windows-vm. We came here to see some DHCP Traffic, so lets create some. Open the Notepad on the windows-vm. Type in, ipconfig /release and ipconfig /renew like you see in Figure 25. Now, save that in C:\ProgramData as dhcp.bat and click save. Now lets hop back over to PowerShell.
-</p>
 <br />
 <p>
-<img width="850" alt="DHCP3" src="https://github.com/user-attachments/assets/2f816a07-96d7-48d7-ab6f-7721220eb7e9" />
-
-<img width="850" alt="DHCP4" src="https://github.com/user-attachments/assets/5a2880b1-eb24-4b33-a4f7-7c3eb7634b43" />
+ <img width="1625" alt="Screenshot 2025-05-27 at 5 47 26 PM" src="https://github.com/user-attachments/assets/785fd98c-d830-4d5e-bffb-8249a5671df4" />
 </p>
 
 <p>
-- In Powershell, we are going to change directories with the command cd c:\programdata and press enter. Now, list what files are in this directory with the command ls and press enter. Next, run our bat file, dhcp.bat, that we just created with the command .\dhcp.bat and press enter. See Figure 26.
+We saved our file in Documents, so in Powershell, cd into the Documents directory. Type the command cd Documents and press enter. Now execute the file with the command .\dhcp.bat in PowerShell. 
 </p>
 
 <p>
-- You will see the ipconfig /release and the windows-vm will disconnect for a second, but it will fire back up pretty quick once the windows-vm renews the IP. Now take a look at Wireshark and PowerShell in Figure 27. We can see the actual proccess in action! DHCP traffic as promised.🤯 Big shout out to Josh Madakor for this little trick. 🫡
+- You will see the ipconfig /release and the windows-vm will disconnect for a second, but it will fire back up pretty quick once the windows-vm renews the IP. During execution, the VM will momentarily release and renew its IP address. This activity will be captured as DHCP discover, offer, request, and acknowledgment packets in Wireshark. Observe Wireshark and PowerShell in Figure 27. We can see  proccess in action!
 </p>
 <br />
 
