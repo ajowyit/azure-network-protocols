@@ -35,7 +35,7 @@ In this project, we explore network traffic between two Azure Virtual Machines u
 
 <h2>Actions and Observations</h2>
 
-<h3>Step 1: Connect to virtual machine using RDP & Install Wireshark</h3>
+<h3>Step 1: Connect to the virtual machine using Remote Desktop Protocol (RDP) and Install Wireshark</h3>
 <p>
 
 <img width="1500" alt="Screenshot 2025-05-26 at 11 16 53 PM" src="https://github.com/user-attachments/assets/6008b209-9a30-4b66-a941-7959a1e2d425" />
@@ -98,7 +98,7 @@ In this project, we explore network traffic between two Azure Virtual Machines u
 </p>
 <br />
 
-<h3>Step 2: Observe ICMP Traffic</h3>
+<h3>Step 2: Observe the ICMP Traffic</h3>
 <p>
  <img width="748" alt="Screenshot 2025-05-27 at 12 51 32 AM" src="https://github.com/user-attachments/assets/0eb44072-f0cb-4b90-a0bd-2127481970a8" />
 </p>
@@ -162,7 +162,7 @@ In this project, we explore network traffic between two Azure Virtual Machines u
 </p>
 <br />
 
-<h3>Step 2: Use NSG (Firewall) to Deny Ping</h3>
+<h3>Step 3: Use a Network Security Group (NSG) firewall to deny ping</h3>
 <p>
 <img width="1500" alt="Screenshot 2025-05-27 at 2 45 55 PM" src="https://github.com/user-attachments/assets/a5c3cab7-69b1-464a-8c29-8dbf995b9545" />
 </p>
@@ -211,7 +211,7 @@ In this project, we explore network traffic between two Azure Virtual Machines u
 
 <br />
 
-<h3>Step 3: Observe SSH and DHCP Traffic</h3>
+<h3>Step 4: Observe the SSH and DHCP traffic</h3>
 <p>
  <img width="1624" alt="Screenshot 2025-05-27 at 4 05 38 PM" src="https://github.com/user-attachments/assets/5d197381-36e8-4e71-8b23-07bc10a97643" />
 <img width="1620" alt="Screenshot 2025-05-27 at 4 11 49 PM" src="https://github.com/user-attachments/assets/934bf7e1-d655-4378-bc82-b17431188561" />
@@ -284,7 +284,7 @@ ipconfig /renew
 </p>
 <br />
 
-<h3>Step 5: Observe DNS and RDP Traffic</h3>
+<h3>Step 5: Observe the DNS and RDP Traffic</h3>
 <p>
 <img width="1589" alt="Screenshot 2025-05-27 at 6 14 03 PM" src="https://github.com/user-attachments/assets/d3d0c72c-34d3-4258-b7d8-da92cb9e9f97" />
 <img width="1704" alt="Screenshot 2025-05-27 at 6 16 14 PM" src="https://github.com/user-attachments/assets/c4024aed-d6d0-4897-8b6a-9c23c66de63f" />
