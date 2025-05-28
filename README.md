@@ -253,7 +253,18 @@ In this project, we explore network traffic between two Azure Virtual Machines u
 </p>
 
 <p>
-- Type dhcp into the filter bar of Wireshark and start a new capture. In Powershell, type the command ipconfig /renew and press enter. Well that wasn't very exciting at all was it? Not much happened.😒 Lets direct our attention to Figure 25 for a moment because Figure 24 was a snooze fest. 😴
+- Dynamic Host Configuration Protocol (DHCP) is a protocol used to assign dynamic IP addresses to devices. In Microsoft Azure, virtual machines are assigned reserved dynamic IPs via DHCP. 
+</p>
+
+<p>
+- When we release an IP address manually with the command ipconfig /release, it can disconnect our RDP session. In order to circumvent this, we will create a batch script that will automate release and renew operations.
+</p>
+
+<p>
+- Type dhcp into the filter bar of Wireshark and start a new capture. Open Notepad in the windows-vm and write:
+
+ipconfig /release
+ipconfig /renew
 </p>
 
 <p>
