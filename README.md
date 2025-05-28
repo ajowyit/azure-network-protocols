@@ -262,10 +262,12 @@ In this project, we explore network traffic between two Azure Virtual Machines u
 
 <p>
 - Type dhcp into the filter bar of Wireshark and start a new capture. Open Notepad in the windows-vm and write:
+</p>
 
+```plaintext
 ipconfig /release
 ipconfig /renew
-</p>
+```
 
 <p>
 - So, Figure 25. What is this all about? Well, we can't use the command ipconfig /release in PowerShell because we will loose our connection to the windows-vm. We came here to see some DHCP Traffic, so lets create some. Open the Notepad on the windows-vm. Type in, ipconfig /release and ipconfig /renew like you see in Figure 25. Now, save that in C:\ProgramData as dhcp.bat and click save. Now lets hop back over to PowerShell.
