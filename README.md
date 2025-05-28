@@ -276,7 +276,7 @@ ipconfig /renew
 </p>
 
 <p>
-We saved our file in Documents, so in Powershell, cd into the Documents directory. Type the command cd Documents and press enter. Now execute the file with the command .\dhcp.bat in PowerShell. 
+- We saved our file in Documents, so in Powershell, cd into the Documents directory. Type the command cd Documents and press enter. Now execute the file with the command .\dhcp.bat in PowerShell. 
 </p>
 
 <p>
@@ -286,36 +286,40 @@ We saved our file in Documents, so in Powershell, cd into the Documents director
 
 <h3>Step 5: Observe DNS and RDP Traffic</h3>
 <p>
-<img width="850" alt="DNS1" src="https://github.com/user-attachments/assets/0ad0edf0-a43d-46e9-b477-b33e00639b76" />
-
-<img width="850" alt="DNS2" src="https://github.com/user-attachments/assets/5aa050be-bde6-4f25-852c-1df42b6894bd" />
+<img width="1589" alt="Screenshot 2025-05-27 at 6 14 03 PM" src="https://github.com/user-attachments/assets/d3d0c72c-34d3-4258-b7d8-da92cb9e9f97" />
+<img width="1704" alt="Screenshot 2025-05-27 at 6 16 14 PM" src="https://github.com/user-attachments/assets/c4024aed-d6d0-4897-8b6a-9c23c66de63f" />
 </p>
 
 <p>
-- Time for some DNS traffic. In the Wireshark filter bar, type in dns and start a new capture. Over in PowerShell, type in the command nslookup disney.com and press enter. PowerShell shows us the an IP for Disney. Lets copy that IP, take it the browser, and see what we get when we run a search. See Figure 28. 
+- Now let's observe DNS traffic. In the Wireshark filter bar, type in dns and start a new capture. In PowerShell, type in the command nslookup disney.com and press enter. PowerShell should show an IP for disney.com. Copy that IP and paste it into the browser.
 </p>
 
 <p>
-- What is this? 🤨 Even Wreck-it-Ralph looks confused. We can see that the IP, 130.211.198.204, is clearly related to Disney somehow. Notice the Disney logo by the IP address? Here are a couple things to consider. 1) We probably are not authorized to see what this IP really is. 2) DNS protocol translates human-readable domain names into machine-readable IP addresses. Very few websites can be accessed by typing the IP address directly into the address bar of a browser. Still, pretty cool stuff. 
+- Observe the browser. We can see that the IP, 130.211.198.204, is related to Disney somehow. Observe the Disney logo by the IP address. Here are some things to consider. 1) We probably are not authorized to see what this IP really is. 2) DNS protocol translates human-readable domain names into machine-readable IP addresses. Not many websites can be accessed by typing the IP address directly into the address bar of a browser. 
 </p>
 <br />
 
 <p>
-<img width="850" alt="RDP1" src="https://github.com/user-attachments/assets/7a4c3d8b-2ce0-441c-89ce-e45520c51cad" />
-
-<img width="850" alt="RDP2" src="https://github.com/user-attachments/assets/e2370e30-1b5e-492b-bbf1-cb2b80173138" />
+ <img width="771" alt="Screenshot 2025-05-27 at 6 19 03 PM" src="https://github.com/user-attachments/assets/f0e7c222-26c7-4de1-841e-adcaba47e355" />
+ <img width="773" alt="Screenshot 2025-05-27 at 6 19 51 PM" src="https://github.com/user-attachments/assets/d98571ed-7871-45ba-8909-ed0761595d5b" />
 </p>
 
 <p>
-- Last but certainly not least. Lets look at some RDP traffic and switch it up a bit. Filter the traffic by the Port RDP uses. In the filter bar, type tcp.port == 3389 and start a new capture. Notice all the packets just zooming through? We saw this same thing at the beginning of this project. We have been running a virtual machine using RDP (Remote Desktop Protocol) this entire time! There is traffic constantly flowing over the network while we are connected to the windows-vm. Also, you can filter in Wireshark with rdp in the filter bar. See figure 31. 
+- Finally, let's observe RDP traffic. Filter the traffic by the Port RDP uses (TCP 3389). In the filter bar, type tcp.port==3389. Notice all the packets just zooming through? We saw this same thing at the start of this lab. Because we're running a virtual machine using RDP (Remote Desktop Protocol), there is traffic constantly flowing over the network while we're connected to the windows-vm. Now type rdp in the filter bar and observe.
 </p>
 
 <h2>✅ Conclusion</h2>
 
 <p>
-This concludes our project. We sucessfully connected to our windows-vm using RDP and observed a ton of network traffic with various protocols using Wireshark and PowerShell. I highly recommed hitting the YouTube and checking out more about both. The more tools you are familiar with, the better. Hey, we even dipped our pinky toe into the vast ocean of Cybersecurity by creating a new security rule to deny inbound traffic. Maybe that was a stretch, but still fun stuff.</p> 
-<p>Hopefully, you learned something that you didn't know before and possibily had a little fun at the same time. I know Wreck-it-Ralph did. Don't forget to Stop (turn off) the VMs in Azure. As always, Thank You for your time and viewing this Project. We'll see you on the next one!😎      
+In this project, we created two Azure virtual machines—one running Windows and the other Linux—to explore real-time network traffic using Wireshark and PowerShell. We successfully connected to the Windows VM via RDP and observed various protocols in action, including ICMP, SSH, DNS, DHCP, and more. By configuring and testing Network Security Groups (NSGs), we gained hands-on experience in managing and securing traffic between cloud-based resources.
 </p>
+<p>
+This lab provided a valuable introduction to cloud networking and traffic analysis, and even gave us a glimpse into the world of cybersecurity through custom NSG rule creation. Whether you're new to Azure or looking to sharpen your skills, exploring tools like Wireshark and PowerShell is a great way to build confidence in real-world IT environments.
+</p>
+<p>
+Thanks for following along—and don’t forget to stop (turn off) your VMs to avoid unexpected charges!
+</p>
+
 <br />
 
 
