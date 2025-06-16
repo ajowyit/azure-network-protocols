@@ -33,7 +33,7 @@ In this project, we explore network traffic between two Azure Virtual Machines u
 - Step 4: Observe the SSH and DHCP traffic
 - Step 5: Observe the DNS and RDP traffic
 
-<h2>Actions and Observations</h2>
+<h2>🎥 Actions and Observations</h2>
 
 <h3>Step 1: Connect to the virtual machine using Remote Desktop Protocol (RDP) and Install Wireshark</h3>
 <p>
